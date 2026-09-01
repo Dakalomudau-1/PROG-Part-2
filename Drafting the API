@@ -1,0 +1,37 @@
+
+HTTP method 
+
+Route 
+
+Description 
+
+Role Required 
+
+Request body 
+
+Expected response 
+
+POST 
+
+/api/auth/register 
+
+It creates a new account for the participant. 
+
+None (public) 
+
+{fullName, email, password, dateOfBirth, role, phoneNumber} 
+
+201 Created – new participant id returned | 400 Bad Request – missing/invalid fields | 409 Conflict – account already exists 
+
+POST 
+
+/api/auth/login 
+
+It authenticates a user and start a session with user id and role. 
+
+None (public) 
+
+{email, password} 
+
+200 OK – session has started, user id and role returned| 401 Unauthorized – incorrect email or password 
+

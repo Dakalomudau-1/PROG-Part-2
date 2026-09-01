@@ -1,0 +1,5 @@
+The RouteWayPoint table will be used to store GPS points that trace the event route on a map. 
+The RouteId is a foreign key linking the way points to a specific route, whereas the sequenceNo will
+determine the order of way points so that the route can be drawn correctly and the unique constrain ensures
+that each route 
+has a unique sequence of way points.

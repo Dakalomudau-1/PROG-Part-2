@@ -1,0 +1,4 @@
+The purpose of the user table is to store all the user accounts for the race day system.
+The password Hash will be used to store hashed passwords only and the email has a unique constrain to prevent users
+from using two emails for different roles. Profile picture URL is included to support azure blob storage integration in part 3. The DateOfBirth field is used to store the participant's date of birth. This enables age validation when participants enrol in events with age-restricted categories. 
+The DateOfBirth is required for participants but can be NULL for organisers, as organisers do not participate in events.

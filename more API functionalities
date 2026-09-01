@@ -1,0 +1,25 @@
+
+GET 
+
+/api/events/{id} 
+
+It returns full details for one event. 
+
+None (public) 
+
+None  
+
+200 OK – full event detail returned | 404 Not Found – no returned event with this id 
+
+POST 
+
+/api/events 
+
+It creates a new event. 
+
+Organiser  
+
+{name, description, eventDate, location, distanceKm, eventType} 
+
+201 Created – new event id returned| 400 Bad Request – missing/invalid fields | 403 Forbidden – logged-in user is not an organiser 
+

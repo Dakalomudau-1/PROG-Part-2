@@ -1,0 +1,25 @@
+
+PUT 
+
+/api/events/{id} 
+
+It updates an event the organiser owns. 
+
+Organiser  
+
+{name, description, eventDate, location, distanceKm, eventType} 
+
+200 OK – updated event returned | 403 Forbidden _ organiser does not own this event | 404 Not Found – event does not exist 
+
+DELETE 
+
+/api/events/{id} 
+
+It deletes an event the organiser owns. 
+
+Organiser  
+
+None  
+
+204 No Content – event deleted, nothing returned | 403 Forbidden – organiser does not own the event | 404 Not Found – event does not exist 
+

@@ -1,0 +1,2 @@
+The result table will store finish times and positions for participants who completed an event. 
+The EnrolmentId has a unique constrain to ensure that each enrolment has at least one results. 

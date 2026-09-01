@@ -1,0 +1,28 @@
+
+PUT 
+
+/api/users/me 
+
+It updates the logged in user’s profile. 
+
+Any  
+
+{fullName, phoneNumber, profilePictureUrl} 
+
+200 OK – updated profile returned | 400 Bad Request – invalid field values 
+
+
+GET 
+
+/api/events 
+
+It lists all the upcoming events with optional filters. 
+
+None (public) 
+
+None  
+
+ 
+
+200 OK – a list of upcoming events returned 
+

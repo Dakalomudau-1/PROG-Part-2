@@ -1,0 +1,3 @@
+The category table stores age or distance-based categories for each event. 
+It includes the EventId as a foreign key to link the categories to a specific event. 
+The relationship between the event and category table is that each event can have many categories.  

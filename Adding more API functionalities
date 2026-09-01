@@ -1,0 +1,25 @@
+
+POST 
+
+/api/auth/logout 
+
+It ends the current session. 
+
+Any (logged in) 
+
+None  
+
+200 OK – session ended; no data returned 
+
+GET 
+
+/api/users/me 
+
+It returns the logged in user’s profile. 
+
+Any  
+
+None  
+
+200 OK – logged-in user’s profile returned| 401 Unauthorized – no active session 
+

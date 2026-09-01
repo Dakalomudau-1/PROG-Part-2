@@ -1,0 +1,3 @@
+The route table will be used to store route information for each event include the start location and elevation(uphill) data.
+The EventId has a unique constraint to ensure each event has only one route, whereas the startLat and startLng stores
+GPS coordinates for map rendering in the MVC front-end. 

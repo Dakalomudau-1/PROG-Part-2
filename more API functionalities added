@@ -1,0 +1,25 @@
+
+POST 
+
+/api/events/{id}/banner 
+
+It uploads a banner image to azure blob storage sent as a multipart/ form data file. 
+
+Organiser  
+
+{file} 
+
+200 OK – banner image URL returned| 400 Bad Request – invalid/missing file| 403 Forbidden – organiser does not own this event 
+
+GET 
+
+/api/events/{id}/categories 
+
+It lists all the categories for an event. 
+
+None (public) 
+
+None  
+
+200 OK – list of categories for the event returned 
+

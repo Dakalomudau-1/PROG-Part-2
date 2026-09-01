@@ -1,0 +1,6 @@
+The event table will be used to store all the events created by the organisers. 
+It uses the userId as a foreign key to link to the organiser who created the event to manage role-based access control.
+The event type uses a check constrain to restrict values to ‘Run’, ‘Walk’, or ‘Cycle’, the DistanceKm uses decimals
+to store precise distances and banner image URL stores the azure blob storage URL for event banners.
+The relationship between the user and events is that each user can create many events in this case
+the organiser can create many events.

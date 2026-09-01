@@ -1,0 +1,3 @@
+The enrolment table will contain the records for when a participant registers for an event and selects a category. 
+The UserId links to the participant, EventId links to the event and CategoryId links to the selected category. 
+The status defaults to ‘pending’ with check constraints limiting to ‘pending’, ‘confirmed’, or ‘cancelled’.

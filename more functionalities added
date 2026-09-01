@@ -1,0 +1,25 @@
+
+POST 
+
+/api/events/{id}/categories 
+
+It adds a category to the event. 
+
+Organiser  
+
+{name, minAge, maxAge, distanceKm} 
+
+201 Created – new category id returned | 403 Forbidden – organiser does not own this event| 404 Not Found – event does not exist 
+
+PUT 
+
+/api/categories/{id} 
+
+It updates an existing category. 
+
+Organiser  
+
+{name, minAge, maxAge, distanceKm} 
+
+200 OK – updated category returned | 403 Forbidden – organiser does not own the event | 404 Not Found – category does not exist 
+

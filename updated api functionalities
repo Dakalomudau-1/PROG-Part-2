@@ -1,0 +1,11 @@
+PUT	/api/users/me	It updates the logged in user’s profile.	Any 	{fullName, phoneNumber, profilePictureUrl}
+GET	/api/events	It lists all the upcoming events with optional filters.	None (public)	None 
+
+GET	/api/events/{id}	It returns full details for one event.	None (public)	None 
+POST	/api/events	It creates a new event.	Organiser 	{name, description, eventDate, location, distanceKm, eventType}
+PUT	/api/events/{id}	It updates an event the organiser owns.	Organiser 	{name, description, eventDate, location, distanceKm, eventType}
+DELETE	/api/events/{id}	It deletes an event the organiser owns.	Organiser 	None 
+POST	/api/events/{id}/banner	It uploads a banner image to azure blob storage sent as a multipart/ form data file.	Organiser 	{file}
+GET	/api/events/{id}/categories	It lists all the categories for an event.	None (public)	None 
+POST	/api/events/{id}/categories	It adds a category to the event.	Organiser 	{name, minAge, maxAge, distanceKm}
+PUT	/api/categories/{id}	It updates an existing category.	Organiser 	{name, minAge, maxAge, distanceKm}
